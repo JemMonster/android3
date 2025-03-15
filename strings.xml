@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Рыбаков3</string>
+    <string name="hello_world">Привет Мир!</string>
+    <string name="next">Дальше</string>
+    <string name="back">Назад</string> <!-- Добавьте эту строку -->
+    <string name="cat_image_description">милый котик</string>
+    <string name="switch_theme">смена темы</string>
+</resources>

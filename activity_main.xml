@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Верхняя часть экрана (поля ввода и кнопки) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your age"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout"
+            android:onClick="onNextActivity" />
+
+        <Button
+            android:id="@+id/btnRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout"
+            android:onClick="onNextActivity" />
+
+        <Button
+            android:id="@+id/btnConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ConstraintLayout"
+            android:onClick="onNextActivity" />
+
+        <Button
+            android:id="@+id/btnFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FrameLayout"
+            android:onClick="onNextActivity" />
+
+        <Button
+            android:id="@+id/btnSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_theme"
+            android:onClick="onSwitchTheme" />
+    </LinearLayout>
+
+    <!-- Нижняя часть экрана (изображение) -->
+    <ImageView
+        android:id="@+id/imageViewCat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/cat"
+        android:contentDescription="@string/cat_image_description"
+        android:scaleType="centerCrop" />
+</LinearLayout>
